@@ -160,6 +160,5 @@ Units Sold = SUM(Sales_Fact[quantity])
 ---
 
 ## ⚠️ Disclaimer
-```
 This is a starter implementation designed for demonstration, learning, and portfolio showcases. It is **not production-ready** for regulated healthcare operations without implementing authentication, granular RBAC, audit logs, and compliance controls.
-```
+
