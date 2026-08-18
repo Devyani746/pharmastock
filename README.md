@@ -1,15 +1,14 @@
-```markdown
-# 💊 PharmaStock
+## 💊 PharmaStock
 
 > **Operating System & Inventory Engine for Pharmaceutical Stockists and B2B Distributors**
 
 PharmaStock modernizes traditional pharmaceutical distribution by replacing error-prone manual ledgers with an automated First-Expired, First-Out (FEFO) fulfillment engine, real-time working capital risk auditing, and automated data synchronization for business intelligence.
 
----
-
+````
+````
 ## 🏗️ System Architecture
-
-```text
+```
+```
 Browser Frontend (:3000)
        │ HTTP / REST API
        ▼
@@ -21,8 +20,8 @@ MySQL / XAMPP Database (:3306)
        ▼
 Python ETL Pipeline (sync_excel.py) ──► pharmastock_live_data.xlsx ──► Power BI Dashboard
 ## 📂 Repository Structure
-
-```text
+```
+```
 pharmastock/
 ├── database/
 │   └── schema.sql             # Relational DDL & multi-batch seed data
@@ -40,9 +39,7 @@ pharmastock/
 └── README.md
 
 ```
-
----
-
+```
 ## ⚡ Key Features
 
 * **Hierarchical Batch Tracking:** Discrete tracking for batch number, expiry date, purchase price, MRP, and supplier under each master medicine SKU.
