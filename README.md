@@ -41,9 +41,9 @@ pharmastock/
 └── README.md
 
 ```
-```
-## ⚡ Key Features
 
+## ⚡ Key Features
+```
 * **Hierarchical Batch Tracking:** Discrete tracking for batch number, expiry date, purchase price, MRP, and supplier under each master medicine SKU.
 * **FEFO Order Allocation:** When orders reach `DELIVERED`, stock is deducted sequentially from the earliest non-expired batch via atomic SQL transactions.
 * **Expiry Risk Horizon Auditing:** Continuous classification into Expired ($<0\text{d}$), Critical ($\le 30\text{d}$), Medium ($31\text{--}60\text{d}$), Watchlist ($61\text{--}90\text{d}$), and Healthy stock.
@@ -66,7 +66,7 @@ pharmastock/
 * [Python 3.x](https://www.python.org/) (with PATH enabled)
 
 ---
-
+```
 ### Step 1: Initialize the Database
 
 1. Open the **XAMPP Control Panel** and start **MySQL**.
