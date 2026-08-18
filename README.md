@@ -19,10 +19,8 @@ MySQL / XAMPP Database (:3306)
        │ PyMySQL Polling Worker
        ▼
 Python ETL Pipeline (sync_excel.py) ──► pharmastock_live_data.xlsx ──► Power BI Dashboard
----
 ```
 ## 📂 Repository Structure
-
 ```
 pharmastock/
 ├── database/
@@ -39,11 +37,9 @@ pharmastock/
 │   └── sync_excel.py          # Auto-sync MySQL tables to Excel workbook
 ├── .gitignore
 └── README.md
-
 ```
 
 ## ⚡ Key Features
-```
 ```
 * **Hierarchical Batch Tracking:** Discrete tracking for batch number, expiry date, purchase price, MRP, and supplier under each master medicine SKU.
 * **FEFO Order Allocation:** When orders reach `DELIVERED`, stock is deducted sequentially from the earliest non-expired batch via atomic SQL transactions.
@@ -55,19 +51,15 @@ pharmastock/
 
 
 * **Automated BI Integration:** Python ETL script outputs `pharmastock_live_data.xlsx` for direct ingestion into Power BI star-schema models.
-
----
+```
 
 ## 🛠️ Getting Started
 
 ### Prerequisites
-
+```
 * [Node.js (LTS)](https://nodejs.org/)
 * [XAMPP](https://www.apachefriends.org/) (for MySQL)
 * [Python 3.x](https://www.python.org/) (with PATH enabled)
-
----
-```
 ```
 ### Step 1: Initialize the Database
 
@@ -89,7 +81,6 @@ cd D:\pharmastock\backend
 Copy-Item .env.example .env
 npm install
 npm run dev
-
 ```
 
 *API runs on `http://localhost:4000`. Test health at `http://localhost:4000/api/health`.*
@@ -171,9 +162,6 @@ Units Sold = SUM(Sales_Fact[quantity])
 ---
 
 ## ⚠️ Disclaimer
-
-This is a starter implementation designed for demonstration, learning, and portfolio showcases. It is **not production-ready** for regulated healthcare operations without implementing authentication, granular RBAC, audit logs, and compliance controls.
-
 ```
-
+This is a starter implementation designed for demonstration, learning, and portfolio showcases. It is **not production-ready** for regulated healthcare operations without implementing authentication, granular RBAC, audit logs, and compliance controls.
 ```
