@@ -7,8 +7,8 @@ PharmaStock modernizes traditional pharmaceutical distribution by replacing erro
 ````
 ````
 ## 🏗️ System Architecture
-```
-```
+
+```text
 Browser Frontend (:3000)
        │ HTTP / REST API
        ▼
@@ -20,7 +20,7 @@ MySQL / XAMPP Database (:3306)
        ▼
 Python ETL Pipeline (sync_excel.py) ──► pharmastock_live_data.xlsx ──► Power BI Dashboard
 ## 📂 Repository Structure
-```
+
 ```
 pharmastock/
 ├── database/
