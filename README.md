@@ -19,6 +19,8 @@ MySQL / XAMPP Database (:3306)
        │ PyMySQL Polling Worker
        ▼
 Python ETL Pipeline (sync_excel.py) ──► pharmastock_live_data.xlsx ──► Power BI Dashboard
+---
+```
 ## 📂 Repository Structure
 
 ```
